@@ -1,4 +1,5 @@
-ction runs when the button is clicked
+
+// This function runs when the button is clicked
 /*      function greetUser() {
         let name = prompt("What's your name? \n ཁྱེད་རང་གི་མིང་ལ་ག་རེ་རེད།");
         if (name) {
