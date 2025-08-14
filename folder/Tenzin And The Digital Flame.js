@@ -66,17 +66,18 @@ function showMessage(text, ms = 2000) {
 //  LIFECYCLE
 // =========================
 function preload() {
-  tenzinImg = loadImage("tenzin.png");
-  LhamoImg = loadImage("Lhamo.png");
-  sonamImg  = loadImage("sonam.png");
-  chipImg   = loadImage("chip.png");
-  wireImg   = loadImage("wire.png");
-  coinImg   = loadImage("coin.png");
-  bgImage   = loadImage("background.jpeg"); // used in Level 2
+  tenzinImg = loadImage("images/tenzin.png");
+  LhamoImg = loadImage("images/Lhamo.png");
+  sonamImg  = loadImage("images/sonam.png");
+  chipImg   = loadImage("images/chip.png");
+  wireImg   = loadImage("images/wire.png");
+  coinImg   = loadImage("images/coin.png");
+  bgImage   = loadImage("images/background.jpeg"); // used in Level 2
 }
 
 function setup() {
-  createCanvas(600, 400);
+  let cv=createCanvas(600, 400);
+  cv.parent('game');
 
   if      (currentLevel === 1) setupLevel1();
   else if (currentLevel === 2) setupLevel2Conversation();
